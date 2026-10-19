@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact PDFGuru</title><meta name="description" content="Contact PDFGuru — questions, feedback or tool requests. We read every message.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>P</text></svg>">
+<link rel="stylesheet" href="/assets/css/styles.css"></head><body><header class="site-header"><div class="wrap header-inner">
+<a class="logo" href="/index.html"><span class="logo-mark"></span><span>PDF<b>Guru</b></span></a>
+<nav class="main-nav">
+<a href="/index.html">All tools</a><a href="/about.html">About</a><a href="/contact.html">Contact</a>
+</nav></div></header>
+<div class="wrap"><div class="page-head prose">
+<h1>Contact us</h1>
+<p>Questions, feedback, or a tool you'd love to see? Send us a message — we read everything.</p>
+<form id="contactForm" class="workspace" style="max-width:640px">
+  <div class="opt-group"><label for="cName">Your name</label><input type="text" id="cName" required></div>
+  <div class="opt-group"><label for="cEmail">Your email</label><input type="text" id="cEmail" required placeholder="you@example.com"></div>
+  <div class="opt-group"><label for="cMsg">Message</label><textarea id="cMsg" required placeholder="How can we help?"></textarea></div>
+  <button class="btn-primary" type="submit">Send message</button>
+  <p class="hint">This opens your email app with the message addressed to us — nothing is sent until you hit send there.</p>
+</form>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var n = document.getElementById('cName').value.trim();
+  var m = document.getElementById('cMsg').value.trim();
+  var em = document.getElementById('cEmail').value.trim();
+  var body = encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\n' + m);
+  window.location.href = 'mailto:zahidzubair489@gmail.com?subject=' + encodeURIComponent('PDFGuru contact from ' + n) + '&body=' + body;
+});
+</script>
+</div></div>
+<footer class="site-footer"><div class="wrap">
+<div class="footer-grid">
+<div><h4>PDFGuru</h4><p class="brand-blurb">Free online PDF tools that run entirely in your browser. Your files never leave your device.</p></div>
+<div><h4>Organize PDF</h4><ul><li><a href="/merge-pdf.html">Merge PDF</a></li><li><a href="/split-pdf.html">Split PDF</a></li><li><a href="/organize-pdf.html">Organize PDF</a></li><li><a href="/rotate-pdf.html">Rotate PDF</a></li><li><a href="/crop-pdf.html">Crop PDF</a></li></ul></div><div><h4>Optimize PDF</h4><ul><li><a href="/compress-pdf.html">Compress PDF</a></li></ul></div><div><h4>Convert PDF</h4><ul><li><a href="/pdf-to-jpg.html">PDF to JPG</a></li><li><a href="/jpg-to-pdf.html">JPG to PDF</a></li><li><a href="/pdf-to-word.html">PDF to Word</a></li><li><a href="/pdf-to-excel.html">PDF to Excel</a></li><li><a href="/pdf-to-ppt.html">PDF to PowerPoint</a></li><li><a href="/pdf-to-markdown.html">PDF to Markdown</a></li><li><a href="/html-to-pdf.html">HTML to PDF</a></li><li><a href="/scan-to-pdf.html">Scan to PDF</a></li></ul></div><div><h4>Edit PDF</h4><ul><li><a href="/edit-pdf.html">Edit PDF</a></li><li><a href="/sign-pdf.html">Sign PDF</a></li><li><a href="/watermark-pdf.html">Watermark PDF</a></li><li><a href="/page-numbers.html">Add Page Numbers</a></li><li><a href="/redact-pdf.html">Redact PDF</a></li></ul></div><div><h4>PDF Security</h4><ul><li><a href="/unlock-pdf.html">Unlock PDF</a></li></ul></div><div><h4>PDF Intelligence</h4><ul><li><a href="/ocr-pdf.html">OCR PDF</a></li><li><a href="/compare-pdf.html">Compare PDF</a></li><li><a href="/summarize-pdf.html">Summarize PDF</a></li></ul></div>
+<div><h4>Coming soon</h4><ul><li><a href="/protect-pdf.html">Protect PDF</a></li><li><a href="/word-to-pdf.html">Word to PDF</a></li><li><a href="/excel-to-pdf.html">Excel to PDF</a></li><li><a href="/powerpoint-to-pdf.html">PowerPoint to PDF</a></li><li><a href="/pdf-to-pdfa.html">PDF to PDF/A</a></li><li><a href="/translate-pdf.html">Translate PDF</a></li><li><a href="/repair-pdf.html">Repair PDF</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>© 2026 PDFGuru. Free PDF tools for everyone.</span><span>Made with care — all processing happens on your device.</span></div>
+</div></footer></body></html>

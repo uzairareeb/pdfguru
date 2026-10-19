@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convert PDF pages to JPG or PNG images — PDFGuru</title><meta name="description" content="Convert PDF to JPG online for free. Turn PDF pages into JPG or PNG images with adjustable quality, in your browser. No signup.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>P</text></svg>">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script>pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";</script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "JPG or PNG \u2014 which should I pick?", "acceptedAnswer": {"@type": "Answer", "text": "JPG for scanned photos and smaller files; PNG for sharp text and graphics where clarity matters most."}}, {"@type": "Question", "name": "What does quality change?", "acceptedAnswer": {"@type": "Answer", "text": "Higher quality renders each page at more pixels, so text stays sharp when zoomed \u2014 at the cost of larger image files."}}, {"@type": "Question", "name": "Are the images searchable text?", "acceptedAnswer": {"@type": "Answer", "text": "No \u2014 they are pictures of your pages. If you need searchable text, try our OCR tool instead."}}]}</script></head><body><header class="site-header"><div class="wrap header-inner">
+<a class="logo" href="/index.html"><span class="logo-mark"></span><span>PDF<b>Guru</b></span></a>
+<nav class="main-nav">
+<a href="/index.html">All tools</a><a href="/about.html">About</a><a href="/contact.html">Contact</a>
+</nav></div></header>
+<div class="tool-hero"><div class="wrap">
+<div class="crumbs"><a href="/index.html">Home</a> / Convert PDF / PDF to JPG</div>
+<h1>Convert PDF pages to JPG or PNG images</h1><p>Export PDF pages as JPG or PNG images. Pick your quality, convert all pages or a chosen range, and download everything as a ZIP of neatly named images.</p></div></div>
+<div class="wrap"><div class="workspace">
+<div class="dropzone" id="dropzone"><div class="dz-icon">📄</div>
+<p><strong>Drop your PDF here</strong> or click to browse</p>
+<input type="file" id="fileInput" hidden></div>
+<div class="file-list" id="fileList"></div>
+<div class="options-area" id="optionsArea"><div class="opt-row"><div class="opt-group"><label for="formatSelect">Image format</label>
+        <select id="formatSelect"><option value="jpeg">JPG</option><option value="png">PNG</option></select></div>
+        <div class="opt-group"><label for="scaleSelect">Quality</label>
+        <select id="scaleSelect"><option value="1">Standard</option><option value="1.5">High</option><option value="2" selected>Very high</option></select></div>
+        <div class="opt-group"><label for="jpgRange">Pages (optional)</label>
+        <input type="text" id="jpgRange" placeholder="e.g. 1-3, blank = all"></div></div></div>
+<button class="btn-primary" id="processBtn" disabled>Convert to images</button>
+<div class="progress" id="progressWrap" hidden><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><span class="progress-label" id="progressLabel"></span></div>
+<div class="result-box" id="resultArea" hidden><p id="resultInfo"></p><a class="btn-primary btn-amber" id="downloadBtn" href="#">Download</a></div>
+<p class="error-box" id="errorMsg" hidden></p>
+<div class="privacy-note">🔒 <span><strong>Private by design:</strong> this tool runs entirely in your browser. Your files are never uploaded anywhere.</span></div>
+
+</div>
+<h2>How to use this tool</h2><div class="howto"><div class="step"><span class="n">1</span><h3>Upload your PDF</h3><p>Drop in the document to convert.</p></div><div class="step"><span class="n">2</span><h3>Choose format and quality</h3><p>JPG for photos, PNG for crisp text; higher quality means bigger files.</p></div><div class="step"><span class="n">3</span><h3>Download the ZIP</h3><p>One image per page, named in order.</p></div></div>
+<h2>Frequently asked questions</h2><div class="faq"><details><summary>JPG or PNG — which should I pick?</summary><p>JPG for scanned photos and smaller files; PNG for sharp text and graphics where clarity matters most.</p></details><details><summary>What does quality change?</summary><p>Higher quality renders each page at more pixels, so text stays sharp when zoomed — at the cost of larger image files.</p></details><details><summary>Are the images searchable text?</summary><p>No — they are pictures of your pages. If you need searchable text, try our OCR tool instead.</p></details></div>
+</div>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/tools/pdf-to-jpg.js"></script>
+<footer class="site-footer"><div class="wrap">
+<div class="footer-grid">
+<div><h4>PDFGuru</h4><p class="brand-blurb">Free online PDF tools that run entirely in your browser. Your files never leave your device.</p></div>
+<div><h4>Organize PDF</h4><ul><li><a href="/merge-pdf.html">Merge PDF</a></li><li><a href="/split-pdf.html">Split PDF</a></li><li><a href="/organize-pdf.html">Organize PDF</a></li><li><a href="/rotate-pdf.html">Rotate PDF</a></li><li><a href="/crop-pdf.html">Crop PDF</a></li></ul></div><div><h4>Optimize PDF</h4><ul><li><a href="/compress-pdf.html">Compress PDF</a></li></ul></div><div><h4>Convert PDF</h4><ul><li><a href="/pdf-to-jpg.html">PDF to JPG</a></li><li><a href="/jpg-to-pdf.html">JPG to PDF</a></li><li><a href="/pdf-to-word.html">PDF to Word</a></li><li><a href="/pdf-to-excel.html">PDF to Excel</a></li><li><a href="/pdf-to-ppt.html">PDF to PowerPoint</a></li><li><a href="/pdf-to-markdown.html">PDF to Markdown</a></li><li><a href="/html-to-pdf.html">HTML to PDF</a></li><li><a href="/scan-to-pdf.html">Scan to PDF</a></li></ul></div><div><h4>Edit PDF</h4><ul><li><a href="/edit-pdf.html">Edit PDF</a></li><li><a href="/sign-pdf.html">Sign PDF</a></li><li><a href="/watermark-pdf.html">Watermark PDF</a></li><li><a href="/page-numbers.html">Add Page Numbers</a></li><li><a href="/redact-pdf.html">Redact PDF</a></li></ul></div><div><h4>PDF Security</h4><ul><li><a href="/unlock-pdf.html">Unlock PDF</a></li></ul></div><div><h4>PDF Intelligence</h4><ul><li><a href="/ocr-pdf.html">OCR PDF</a></li><li><a href="/compare-pdf.html">Compare PDF</a></li><li><a href="/summarize-pdf.html">Summarize PDF</a></li></ul></div>
+<div><h4>Coming soon</h4><ul><li><a href="/protect-pdf.html">Protect PDF</a></li><li><a href="/word-to-pdf.html">Word to PDF</a></li><li><a href="/excel-to-pdf.html">Excel to PDF</a></li><li><a href="/powerpoint-to-pdf.html">PowerPoint to PDF</a></li><li><a href="/pdf-to-pdfa.html">PDF to PDF/A</a></li><li><a href="/translate-pdf.html">Translate PDF</a></li><li><a href="/repair-pdf.html">Repair PDF</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>© 2026 PDFGuru. Free PDF tools for everyone.</span><span>Made with care — all processing happens on your device.</span></div>
+</div></footer></body></html>
